@@ -1,75 +1,12 @@
-# Nuxt Minimal Starter
+# Axis (Nuxt 4 / Prototype)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Next.js（メイン）とNuxt.js（検証）を横断する、技術の「軸」を再定義するための実験的ページ。
+モノトーンの構造美と、スクロールに伴う視差効果（Parallax）を検証中。
 
-## Setup
+## 開発環境 (Docker)
 
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Next.js（Port 3000）との干渉を避けるため、**3333番ポート**で起動するように構成しています。
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+docker compose up -d --build
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

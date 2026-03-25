@@ -1,0 +1,14 @@
+services:
+  axis-nuxt:
+    build: .
+    volumes:
+      - .:/app
+      - /app/node_modules # ホスト側のnode_modulesで上書きされないよう保護
+    ports:
+      - "3333:3333"
+    environment:
+      - NODE_ENV=development
+      # Windows/Mac間のファイル変更検知を確実にする設定
+      - WATCHPACK_POLLING=true 
+    stdin_open: true
+    tty: true
